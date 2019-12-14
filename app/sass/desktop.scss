@@ -1,0 +1,72 @@
+@import 'vars';
+
+@media (min-width: $desktop) {
+    .xl {
+        display: block;
+    }
+
+    .xs {
+        display: none;
+    }
+
+    .container {
+        padding: 15px 6.15835777126%;
+    }
+
+    .logo__link {
+        display: flex;
+    }
+
+    .logo__text {
+        font-family: 'MTS Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.153846px;
+        color: $red;
+        padding-left: 9px;
+    }
+
+    .title {
+        padding-left: 72px;
+    }
+
+    .btn--cta {
+        font-family: 'MTS Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        font-feature-settings: 'tnum'on, 'lnum'on;
+        color: #FFFFFF;
+        padding: 10px 29px;
+    }
+
+    .welcome{
+        padding-top: 70px;
+    }
+
+    .welcome__container {
+        padding-bottom: 78px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 6.15835777126%;
+        background-size: 498px;
+    }
+
+    .welcome__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .welcome__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 55px;
+        max-width: 590px;
+    }
+}

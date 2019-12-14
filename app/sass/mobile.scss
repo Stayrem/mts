@@ -1,0 +1,121 @@
+@import 'vars';
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'MTS Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'MTS Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: $deepblue;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn--cta {
+    font-family: 'MTS Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #FFFFFF;
+    padding: 10px 29px;
+}
+
+.xl {
+    display: none;
+}
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(110, 119, 130, 0.25);
+}
+
+.container {
+    padding: 12px 16px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-btn {
+    margin-left: auto;
+    padding-right: 26px;
+}
+
+.btn--red {
+    background: $red;
+}
+
+.welcome {
+    padding: 30px 0 0 0;
+    background-color: #f2f3f7;
+
+}
+
+.welcome__container{
+    background-image: url(../img/@2x/welcome.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 250px;
+    padding-bottom: 224px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 16px;
+}
+
+.welcome__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: $deepblue;
+}
+
+.welcome__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    color: $deepblue;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 378px;
+}

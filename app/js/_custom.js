@@ -22,7 +22,7 @@ const initServicesSlider = () => {
       gap: 16,
       breakpoints: {
         480: {
-          perView: 1.2
+          perView: 1
         },
         600: {
           perView: 1.8

@@ -92,6 +92,15 @@
         width: unset;
     }
 
+    .btn--gray-rounded {
+    &:hover {
+        color: $redhover;
+    }
+    &:active{
+        color: #FFFFFF;
+    }
+}
+
     .corporate__left{
         padding-right: 115px;
     }

@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   initServicesSlider();
   initAccordion();
+  initScrollAnimation();
 });
+
+const initScrollAnimation = () =>{
+  new WOW().init();
+}
 
 const initAccordion = () =>{
   let accordionContainer = document.querySelector('#accordion');
@@ -38,7 +43,6 @@ const initServicesSlider = () => {
       if (window.innerWidth >= maxWidth) {
         slider.destroy();
       }else{
-        console.log('1')
         slider.mount()
       }
     });

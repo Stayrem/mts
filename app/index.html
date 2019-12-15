@@ -11,44 +11,330 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
 	<meta property="og:image" content="img/@1x/preview.jpg">
+	<link rel="stylesheet" href="https://unpkg.com/accordion-js@2.8.0/dist/accordion.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 
 <body>
-<header class="header">
-	<div class="container header__container">
-		<div class="logo">
-			<a href="#" class="logo__link">
-				<img src="img/@2x/logo.svg" alt="" class="logo__image">
-			
-				<span class="logo__text xl">Бизнес маркет</span>
-			</a>
-		</div>
-		<h1 class="title xl">Онлайн сервисы</h1>
-		<a class="btn profile-btn btn--cta btn--red xl"> Личный кабинет</a>
-		<a href="#" class="profile-btn xs">
-			<img src="img/@2x/profile.svg" alt="" class="profile__img">
-		</a>
-		<button class="btn burger-btn xs">
-			<img src="img/@2x/burger.svg" alt="" class="burger-btn__img">
-		</button>
-	</div>
-</header>
-<main class="main">
-	<div class="welcome">
-		<div class="welcome__container container">
-		<p class="welcome__text">
-			Покупайте бизнес сервисы онлайн,<br> оплатив с мобильного счета вашей организации
-		</p>
-		<h2 class="welcome__title">
-			Цифровые решения для вашего бизнеса
-		</h2>
-		<button class="btn btn--cta btn--red welcome__btn">Смотреть все сервисы</button>
-	</div>
-	</div>
-</main>
+	<header class="header">
+		<div class="container header__container">
+			<div class="logo">
+				<a href="#" class="logo__link">
+					<img src="img/@2x/logo.svg" alt="" class="logo__image">
 
+					<span class="logo__text xl">Бизнес маркет</span>
+				</a>
+			</div>
+			<h1 class="title xl">Онлайн сервисы</h1>
+			<a href="#" class="btn profile-btn btn--cta btn--red xl"> Личный кабинет</a>
+			<a href="#" class="profile-btn xs">
+				<img src="img/@2x/profile.svg" alt="" class="profile__img">
+			</a>
+			<button class="btn burger-btn xs">
+				<img src="img/@2x/burger.svg" alt="" class="burger-btn__img">
+			</button>
+		</div>
+	</header>
+	<main class="main">
+		<div class="welcome">
+			<div class="welcome__container container">
+				<p class="welcome__text">
+					Покупайте бизнес сервисы онлайн,<br> оплатив с мобильного счета вашей организации
+				</p>
+				<h2 class="welcome__title">
+					Цифровые решения для вашего бизнеса
+				</h2>
+				<button class="btn btn--cta btn--red welcome__btn">Смотреть все сервисы</button>
+			</div>
+		</div>
+		<div class="services">
+			<div class="services__container">
+				<h2 class="services__title">Какую задачу вы решаете?</h2>
+				<div class="services__block glide">
+					<nav class="services__nav" data-glide-el="controls[nav]">
+						<button class="services__nav-btn btn--gray-rounded btn" data-index="0" data-glide-dir="=0">Реклама и
+							продвижение</button>
+						<button class="services__nav-btn btn--gray-rounded btn" data-index="1" data-glide-dir="=1">Автоматизация
+							процессов</button>
+						<button class="services__nav-btn btn--gray-rounded btn" data-index="2" data-glide-dir="=2">IT и
+							безопасность</button>
+						<button class="services__nav-btn btn--gray-rounded btn" data-index="3" data-glide-dir="=3">Работа с клиентской
+							базой</button>
+					</nav>
+					<div class="services-slider__wrapper glide__track" data-glide-el="track">
+						<div class="glide__slides">
+							<div class="services-slide">
+								<img src="img/@2x/logo.svg" alt="" class="services__logo">
+								<div class="services-slide__title">Голосовой <br> робот</div>
+								<p class="services-sile__text">
+									Облачная платформа голосового робота
+									для совершения автоматических звонков
+									по готовым сценариям
+								</p>
+								<div class="services-slide__info">
+									<span class="services-slide__offer">10</span>
+									<div class="services-sile__offer--text">звонков бесплатно</div>
+								</div><a href="#" class="btn btn--gray services-slide__btn">Подробнее</a>
+							</div>
+							<div class="services-slide">
+								<img src="img/@2x/logo.svg" alt="" class="services__logo">
+								<div class="services-slide__title">Голосовой <br> робот</div>
+								<p class="services-sile__text">
+									Облачная платформа голосового робота
+									для совершения автоматических звонков
+									по готовым сценариям
+								</p>
+								<div class="services-slide__info">
+									<span class="services-slide__offer">10</span>
+									<div class="services-sile__offer--text">звонков бесплатно</div>
+								</div><a href="#" class="btn btn--gray services-slide__btn">Подробнее</a>
+							</div>
+							<div class="services-slide">
+								<img src="img/@2x/logo.svg" alt="" class="services__logo">
+								<div class="services-slide__title">Голосовой <br> робот</div>
+								<p class="services-sile__text">
+									Облачная платформа голосового робота
+									для совершения автоматических звонков
+									по готовым сценариям
+								</p>
+								<div class="services-slide__info">
+									<span class="services-slide__offer">10</span>
+									<div class="services-sile__offer--text">звонков бесплатно</div>
+								</div><a href="#" class="btn btn--gray services-slide__btn">Подробнее</a>
+							</div>
+							<div class="services-slide">
+								<img src="img/@2x/logo.svg" alt="" class="services__logo">
+								<div class="services-slide__title">Голосовой <br> робот</div>
+								<p class="services-sile__text">
+									Облачная платформа голосового робота
+									для совершения автоматических звонков
+									по готовым сценариям
+								</p>
+								<div class="services-slide__info">
+									<span class="services-slide__offer">10</span>
+									<div class="services-sile__offer--text">звонков бесплатно</div>
+								</div><a href="#" class="btn btn--gray services-slide__btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popular">
+			<div class="popular__container container">
+
+
+				<h2 class="popular__title">Популярные сервисы</h2>
+				<div class="popular-container">
+					<div class="popular__item">
+						<div class="popular__item-left">
+							<div class="popular__item-title">МТС Маркетолог</div>
+							<p class="popular__item-text">Используйте различные каналы коммуникации: SMS, E-mail, Viber,
+								Баннеры, Социальные сети</p>
+						</div>
+						<img src="img/@2x/message.svg" alt="" class="popular__item-img">
+					</div>
+					<div class="popular__item">
+						<div class="popular__item-left">
+							<div class="popular__item-title">Бесплатный вызов 8800</div>
+							<p class="popular__item-text">У надежного бизнеса всегда есть номер 8800</p>
+						</div>
+						<img src="img/@2x/phone.svg" alt="" class="popular__item-img">
+
+					</div>
+					<div class="popular__item">
+						<div class="popular__item-left">
+							<div class="popular__item-title">#CloudMTS</div>
+							<p class="popular__item-text">Экосистема облачных сервисов для крупного бизнеса и корпораций
+							</p>
+						</div>
+						<img src="img/@2x/cloud.svg" alt="" class="popular__item-img">
+
+					</div>
+					<div class="popular__item">
+						<div class="popular__item-left">
+							<div class="popular__item-title">Виртуальная АТС</div>
+							<p class="popular__item-text">Простой способ телефонизации офиса без дополнительных затрат
+								на оборудование</p>
+						</div>
+						<img src="img/@2x/atc.svg" alt="" class="popular__item-img">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="corporate">
+			<div class="container corporate__container">
+				<h2 class="corporate__title">Покупка с корпоративного счета в пару кликов</h2>
+				<div class="corporate__wrapper">
+					<div class="corporate__left">
+						<ul class="corporate-list">
+							<li class="corporate-list__item corporate-list__item--porfel">В Бизнес маркете вы можете
+								купить полезные сервисы
+								для бизнеса онлайн</li>
+							<li class="corporate-list__item corporate-list__item--ruble">Оплата с вашего корпоративного
+								мобильного счета</li>
+							<li class="corporate-list__item corporate-list__item--bill">Счет за услуги в привычном
+								формате</li>
+							<li class="corporate-list__item corporate-list__item--online">Покупка и доступ к услугам
+								в режиме онлайн</li>
+							<li class="corporate-list__item corporate-list__item--number">Просто выберите номер
+								корпоративный мобильный номер, с которого вы хотите оплатить бизнес услугу. Онлайн
+								сервисы предоставляются сразу же после оплаты.</li>
+						</ul>
+						<button class="btn btn--cta btn--red corparate__btn">Смотреть все сервисы</button>
+					</div>
+					<div class="xl corporate__right">
+						<img src="img/@2x/block_3_image 2.png" alt="" class="corporate__img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__header">
+				<div class="footer__title">Бизнес маркет</div>
+				<p class="footer__text">Покупайте бизнес сервисы онлайн, оплатив с мобильного счета вашей организации
+				</p>
+			</div>
+			<div id="accordion" class="accordion-container">
+				<div class="ac">
+					<h2 class="ac-q" tabindex="0">Поддержка</h2>
+					<div class="ac-a">
+						<ul class="ac__list">
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Обратная связь</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Контакты</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Политика обработки cookie</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Перейти на сайт mts.ru</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="ac">
+					<h2 class="ac-q" tabindex="0">Реклама и продвижение</h2>
+					<div class="ac-a">
+						<ul class="ac__list">
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">МТС коммуникатор </a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Цифровой ассистент</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Голосовой робот</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Push for site</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Анализ геоданных</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">TVBit</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ac">
+					<h2 class="ac-q" tabindex="0">Автоматизация процессов</h2>
+					<div class="ac-a">
+						<ul class="ac__list">
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Проверка контрагентов</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Конструктор документов</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">CRM Простой бизнес</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Анализ геоданных</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Видеонаблюдение (Larga)</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Мобильные сотрудники</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Virtual POS</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ac">
+					<h2 class="ac-q" tabindex="0">IT и безопасность</h2>
+					<div class="ac-a">
+						<ul class="ac__list">
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Антивирус Касперского</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Антивирус eset</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Aнтивирус doctorweb</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">MDM</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Видеонаблюдение</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Виртуальный сервер </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="ac">
+					<h2 class="ac-q" tabindex="0">Работа с клиентами</h2>
+					<div class="ac-a">
+						<ul class="ac__list">
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Голосовой робот</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Цифровой ассистент</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">CRM простой бизнес</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">МТС коммуникатор</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Видеонаблюдение</a>
+							</li>
+							<li class="ac__list-item">
+								<a href="#" class="ac__list-link">Виртуальный сервер </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__rights">
+			© 2019 ПАО «МТС». Все права защищены.
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+	<script src="https://unpkg.com/accordion-js@2.8.0/dist/accordion.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 
 </body>

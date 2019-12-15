@@ -9,7 +9,8 @@ var gulp         = require('gulp'),
 		newer        = require('gulp-newer'),
 		rename       = require('gulp-rename'),
 		responsive   = require('gulp-responsive'),
-		del          = require('del');
+		del          = require('del'),
+		babel		 = require('gulp-babel');
 
 // Local Server
 gulp.task('browser-sync', function() {
@@ -27,6 +28,7 @@ function bsReload(done) { browserSync.reload(); done(); };
 // Custom Styles
 gulp.task('styles', function() {
 	return gulp.src([
+			'node_modules/@glidejs/glide/dist/css/glide.core.css',
 			'app/sass/main.scss',
 		])
 	.pipe(sass({
@@ -50,6 +52,7 @@ gulp.task('scripts', function() {
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
+	.pipe(babel({presets: ['@babel/env']}))
 	.pipe(uglify()) // Minify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))

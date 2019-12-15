@@ -37,7 +37,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 30px;
         text-align: center;
         font-feature-settings: 'tnum'on, 'lnum'on;
         color: #FFFFFF;
@@ -68,5 +68,58 @@
         font-size: 50px;
         line-height: 55px;
         max-width: 590px;
+    }
+
+    .services-slide{
+        width: 276px;
+    }
+
+    .services__nav{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .corporate__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .glide__slides{
+        margin-left: 6.15835777126%;
+        margin-right: 6.15835777126%;
+        padding: 0;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        width: unset;
+    }
+
+    .corporate__left{
+        padding-right: 115px;
+    }
+
+    .corporate{
+        padding-bottom: 135px;
+    }
+
+    .footer__header{
+        width: 180px;
+        margin-right: 95px;
+    }
+
+    .footer__container{
+        display: flex;
+    }
+
+    .ac{
+        width: 20%;
+        padding-left: 30px;
+        margin-top: 0;
+    }
+
+    .ac>.ac-q{
+        padding-top: 0;
+    }
+    .footer__rights{
+     padding-left: 6.15835777126%;
+     padding-right: 6.15835777126%;
     }
 }

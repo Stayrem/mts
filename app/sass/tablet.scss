@@ -12,9 +12,10 @@
         padding-left: 0;
         padding-right: 0;
         margin: 0 32px;
-        background-size: 430px;
+        background-size: 415px;
     }
-    .welcome{
+
+    .welcome {
         padding-top: 54px;
     }
 
@@ -25,9 +26,115 @@
         line-height: 28px;
     }
 
-    .welcome__title{
+    .welcome__title {
         margin-bottom: 60px;
         margin-top: 20px;
     }
 
+    .services__nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 521px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services__nav-btn {
+        width: unset;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-bottom: 8px;
+            margin-right: 0;
+        }
+    }
+
+    .btn--cta{
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .services__title {
+        text-align: center;
+        max-width: unset;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .glide__bullet--active {
+        background: #FFFFFF;
+        color: $redhover;
+    }
+
+    .glide__slides {
+        padding-left: 32px;
+    }
+
+    .popular-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .popular__item {
+        margin-bottom: 32px;
+        flex-direction: row;
+        transition: all .1s;
+    }
+
+    .popular__item-img{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+
+    .popular__item-left{
+        width: 58.52381%;
+    }
+
+    .popular__item{
+        width: 48.727273%;
+    }
+
+    .popular__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .corparate__btn{
+        width: unset;
+    }
+
+    .corporate{
+        padding-bottom: 69px;
+    }
+
+    .accordion-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ac{
+        width: 33.33333%;
+    }
+    .ac>.ac-q{
+        padding-bottom: 24px;
+        font-size: 12px;
+        padding-right: 0;
+    }
+    .ac__list-item{
+        padding-bottom: 16px;
+    }
+    .footer__rights{
+        background: $stronggray;
+        color: #FFFFFF;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
